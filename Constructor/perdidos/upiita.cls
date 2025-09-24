@@ -814,7 +814,7 @@
   \onecolumn
 \fi
 
-\usepackage{Constructor/configuracion/etoolbox}
+\usepackage{etoolbox}
 \makeatletter
 \patchcmd{\@part}{\partname\nobreakspace}{}{}{}
 \makeatother
