@@ -10,38 +10,41 @@ Los antecedentes se han seleccionado considerando publicaciones previas que oper
 \begin{sidewaystable}
   \scriptsize
   \centering
-  \caption{ S´ıntesis de antecedentes del sistema propuesto (Parte 1)}
-  \begin{tabular}{m{5mm} m{25mm} m{45mm} m{35mm} m{20mm} m{20mm} m{15mm} m{25mm}}
+  \caption{ Síntesis de antecedentes del sistema propuesto (Parte 1)}
+  \begin{tabular}{m{5mm} m{25mm} m{45mm} m{40mm} m{15mm} m{18mm} m{12mm} m{14mm}}
     \toprule
     \centering \textbf{No.} & \centering \textbf{Nombre} & \centering \textbf{Descripción} & \centering \textbf{Características} & \centering \textbf{País} & \centering \textbf{Organización} & \centering \textbf{Tipo} & \textbf{Referencia} \\ 
     \midrule
-    \centering 1 & \centering Mechanical Automation with Vision: A Design for Rubik’s Cube
-Solver. & 
-    \parbox{45mm}{sistema autónomo que combina visión por computadora con un mecanismo físico para resolver un cubo Rubik.} & 
-    \parbox{35mm}{
-      -El sistema utiliza el algoritmo de Kociemba.
-      -Sistema mecánico automatizado.
-      -Implementa motores paso a paso (tres en total).
-      -Emplea YOLOv8 para la detección de colores.} & 
+    \centering 1 & \centering Mechanical Automation with Vision: A Design for Rubik’s Cube Solver. & 
+    \parbox{45mm}{Sistema autónomo que combina visión por computadora con un mecanismo físico para resolver un cubo Rubik.} & 
+    \parbox{40mm}{
+        -El sistema utiliza el algoritmo de Kociemba.\\
+        -Sistema mecánico automatizado.\\
+        -Implementa motores paso a paso (tres en total).\\
+        -Emplea YOLOv8 para la detección de colores.\\} & 
     \centering Nepal & \centering Thapathali Campus & \centering Articulo. & \qquad[\cite{chalise2025mechanical}] \\ 
     \midrule
-    \centering 2 & \centering Robotic Cuber: A Rubik’s Cube solving robot. & \centering El proyecto consiste en el diseño y construcción de un robot de cuatro brazos capaz de escanear un cubo Rubik mediante cámara, procesar su estado, y manipular físicamente el cubo para resolverlo. & 
-    \parbox{35mm}{
-    -Uso de una cámara web para capturar las caras.
-    -Basado en el algoritmo de Kociemba.
-    -Diseño con cuatro brazos tipo garra para sujetar y rotar el cubo.
-    -Para la configuración rápida, el tiempo promedio fue de ~88.07 s.
+    \centering 2 & \centering Robotic Cuber: A Rubik’s Cube solving robot. & \parbox{45mm}{El proyecto consiste en el diseño y construcción de un robot de cuatro brazos capaz de escanear un cubo Rubik mediante cámara, procesar su estado, y manipular físicamente el cubo para resolverlo.} & 
+    \parbox{40mm}{
+    -Uso de una cámara web para capturar las caras.\\
+    -Basado en el algoritmo de Kociemba.\\
+    -Diseño con cuatro brazos tipo garra para sujetar y rotar el cubo.\\
+    -Para la configuración rápida, el tiempo promedio fue de ~88.07 s.\\
      }
  & 
-    \centering México & \centering IPN-UPIBI & \centering Articulo. & \quad[¬.¬] \\
+    \centering Suecia & \centering KTH Royal Institute of Technology
+ & \centering Articulo. & \quad[\cite{gronas2020robotic}] \\
     \midrule
-    \centering 3 & \centering Automatización y control inteligente fuzzy de un reactor UASB vía wireless con LabVIEW. & \centering Prototipo para la automatización y el control inteligente de la medición de pH aplicado a un biorreactor de recirculación de flujo ascendente (UASB). & 
-    \parbox{35mm}{Controlador: NI myRIO-1900.
-Software: LabVIEW.
-Capacidad máxima de suministro de cada reservorio: 5.5 L.
-Comunicación Wireless.
-Bombeo de sustancia por medio de una bomba sumergible y dos bombas peristálticas.} & 
-    \centering México & \centering IPN-UPIBI & \centering Articulo. & \qquad[=)] \\
+    \centering 3 & \centering How to make CUBOTino micro: The World’s smallest Rubik’s cube solver robot. & \parbox{45mm}{ Manual para construir, configurar y operar el CUBOTino micro, robot más pequeño del mundo capaz de resolver un cubo Rubik de 30 mm.  El robot integra visión artificial, detección de colores y el algoritmo de Kociemba para resolver el cubo en un tiempo promedio a 70 segundos.} & 
+    \parbox{40mm}{
+    -Diseñado para un cubo Rubik de 30 mm.\\
+    -Tamaño muy compacto y bajo costo.\\
+    -Usa PiCamera ajustada a corta distancia.\\
+    -Dos servos micro metálicos (180--190°).\\
+    -Basado en Raspberry Pi Zero2W.\\
+    -Implementa el solver de Kociemba.\\
+    } & 
+    \centering Paises bajos & \centering Instructables Project & \centering Manual. & \qquad[\cite{favero2025cubotino}] \\
     \bottomrule
   \end{tabular}  
 \end{sidewaystable}
@@ -49,33 +52,40 @@ Bombeo de sustancia por medio de una bomba sumergible y dos bombas peristáltica
 \begin{sidewaystable}
   \scriptsize
   \centering
-  \caption{Antecedentes del sistema propuesto (Parte 2)}
-  \begin{tabular}{m{5mm} m{25mm} m{45mm} m{35mm} m{20mm} m{20mm} m{15mm} m{25mm}}
+  \caption{Síntesis de antecedentes del sistema propuesto (Parte 2)}
+  \begin{tabular}{m{5mm} m{25mm} m{45mm} m{40mm} m{15mm} m{18mm} m{12mm} m{14mm}}
     \toprule
     \centering \textbf{No.} & \centering \textbf{Nombre} & \centering \textbf{Descripción} & \centering \textbf{Características} & \centering \textbf{País} & \centering \textbf{Organización} & \centering \textbf{Tipo} & \textbf{Referencia} \\ 
     \midrule
-    \centering 4 & \centering Control difuso del oxígeno disuelto, pH y Temperatura de un biorreactor columna de burbujas en la producción de biomasa de Candida utilis. & \centering Se implementó un sistema de control automático por lógica difusa de oxígeno disuelto (OD), pH y temperatura en un biorreactor columna de burbujas (BCB), para la producción de biomasa de Candida utilis. & 
-    \parbox{35mm}{Consta de 3 relés para activar válvulas solenoides, 2 relés para resistencias, 1 microcontrolador, puntos de conexión para fuente.
-Software para diseñar la tarjeta: Eagle 4.14.
-Software para programar la tarjeta: Microcode Studio Plus 3.0.
-Sensor de temperatura:LM35.
-Oxímetro Hach Sension 6.
-pHmetro Hach Sension 2.
-Válvulas solenoides (2.94 MPa).
-Programa en Visual Basic 6.0 enlazado con MatLab 7.0 para control difuso.
-} & 
-    \centering Perú. & \centering Universidad Nacional de Trujillo & \centering Articulo. & \quad[=(] \\
+    \centering 4 & \centering Fabricación de prototipo de robot solucionador del cubo de Rubik. & 
+    \parbox{45mm}{Trabajo de fin de grado que diseña y fabrica un robot “envolvente” con 6 motores paso a paso para resolver un cubo de Rubik.} & 
+    \parbox{40mm}{
+        -Arquitectura mecánica (6 DoF): Estructura con seis NEMA-17.\\
+        -Kociemba en Raspberry Pi.\\
+        -resuelve en menos de 1 minuto.\\
+        } & 
+    \centering España & \centering ETSI Sevilla & \centering Tesis. & \qquad[\cite{gonzalezaparicio2022rubikrobot}] \\ 
     \midrule
-    \centering 5 & \centering Modeling of automatic control system for air supply to a bioreactor using fuzzy control. & \centering Desarrollo de un sistema de control automático (ACS) eficaz del suministro de aire para la aireación en el biorreactor. & 
-    \parbox{35mm}{Software utilizado: Fuzzy Logic Toolbox system of the Simulink MATLAB} & 
-    \centering Rus & \centering Kuban state technological University & \centering Articulo. & \qquad[:v] \\
-    \midrule
-    \centering 6 & \centering Diseño de un sensor suave para estimar el Kla de un sistema de fermentación utilizando sistemas no lineales. & \centering Algoritmo matemático, propuesto para estimar la variable de Kla, basado en la observación del error entre la dinámica del error entre la dinámica de evolución del oxigeno disponible en línea y la dinámica de estimación de oxigeno estimado para el cultivo S.cerevisiae.& 
-    \parbox{35mm}{Software empleado: Simulink-MATLAB
-Sensor de tres etapas: Primera etapa diseño de simulación de biorreactor y red neuronal diferencial,
-Segunda etapa, observador adaptable y tercera etapa neuro observador de estados. 
-} & 
-    \centering México & \centering IPN-UPIBI & \centering Tesis de maestría & \qquad[:v] \\
+    \centering 5 & \centering Robotic Cuber: A Rubik’s Cube solving robot. & \parbox{45mm}{Trabajo de titulación que diseña un sistema automatizado para detectar y resolver un cubo Rubik 3×3. Integra visión por computadora, control electrónico y una app móvil.} & 
+    \parbox{40mm}{
+    -Control de servomotores para giros; uso de controlador Pololu de 18 canales.\\
+    -App Android/móvil que se comunica por Wi-Fi con el sistema para enviar comandos en tiempo real y activar funciones.\\
+    -Detección de colores en HSV, OpenCV y filtrado/descartes para robustez.\\
+     }
+ & 
+    \centering Ecuador & \centering Universidad Católica de Cuenca
+ & \centering Tesis. & \quad[\cite{lopezrojas2025rubikapp}] \\
+%    \midrule
+%    \centering 6 & \centering How to make CUBOTino micro: The World’s smallest Rubik’s cube solver robot. & \parbox{45mm}{ Manual para construir, configurar y operar el CUBOTino micro, robot más pequeño del mundo capaz de resolver un cubo Rubik de 30 mm.  El robot integra visión artificial, detección de colores y el algoritmo de Kociemba para resolver el cubo en un tiempo promedio a 70 segundos.} & 
+%    \parbox{40mm}{
+%    -Diseñado para un cubo Rubik de 30 mm.\\
+%    -Tamaño muy compacto y bajo costo.\\
+%    -Usa PiCamera ajustada a corta distancia.\\
+%    -Dos servos micro metálicos (180--190°).\\
+%    -Basado en Raspberry Pi Zero2W.\\
+%    -Implementa el solver de Kociemba.\\
+%    } & 
+%    \centering Paises bajos & \centering Instructables Project & \centering Manual. & \qquad[\cite{favero2025cubotino}] \\
     \bottomrule
   \end{tabular}  
 \end{sidewaystable}
