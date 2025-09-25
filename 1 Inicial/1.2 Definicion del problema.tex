@@ -1,3 +1,29 @@
 \section{Definición del problema}
 
-para
+En el aprendizaje avanzado del método Fridrich (CFOP) para el cubo Rubik 3×3, el estudiante requiere practicar de forma deliberada configuraciones específicas de F2L, OLL y PLL. Sin embargo, la preparación manual de cada caso implica resolver o desarmar el cubo repetidamente hasta reproducir el estado deseado, lo que introduce pausas frecuentes, variabilidad y un consumo de tiempo que no se invierte directamente en la memorización y ejecución de algoritmos. Esta dinámica reduce la densidad de práctica efectiva por sesión y favorece la frustración, dificultando la consolidación de la memoria procedimental asociada a CFOP \cite{Boyce2022,Boyce2022b}.
+
+\textbf{Problema central.} La práctica avanzada de CFOP en cubo físico es \emph{ineficiente} debido a la necesidad de generar casos manualmente antes de cada intento, lo que disminuye las repeticiones útiles, eleva la carga cognitiva y retrasa la adquisición de algoritmos.
+
+\textbf{Causas.} (i) Ausencia de herramientas físicas diseñadas para \emph{entrenamiento caso-por-caso}; (ii) tiempo y esfuerzo requeridos para reproducir estados específicos con precisión; (iii) variabilidad humana al preparar el cubo; y (iv) limitaciones de los simuladores exclusivamente virtuales para entrenar con el cubo real. La literatura disponible se concentra en robots cuyo objetivo es \emph{resolver} el cubo completo, mas no en sistemas orientados a \emph{preparar} casos de entrenamiento controlado \cite{Gorriz2023,Monzon2017}.
+
+\textbf{Efectos.} (i) Reducción de la tasa de memorización y de la transferencia a una ejecución fluida; (ii) incremento de pausas y pérdida de foco durante la sesión; (iii) percepción de frustración/aburrimiento y eventual abandono; y (iv) estancamiento en la mejora de tiempos de resolución \cite{Boyce2022}.
+
+\textbf{Brecha (gap).} Pese a la existencia de robots resolutores y de simuladores software, no se dispone de un sistema \emph{físico} enfocado en la \emph{preparación rápida, precisa y repetible} de casos CFOP para entrenamiento dirigido. Esta brecha tecnológica y didáctica limita la eficiencia del aprendizaje en la fase avanzada \cite{Gorriz2023,Monzon2017}.
+
+\textbf{Pregunta de investigación.} 
+\emph{¿En qué medida un sistema mecatrónico capaz de generar casos específicos de CFOP reduce el tiempo de preparación por intento y aumenta la repetición efectiva, en comparación con la preparación manual de casos?}
+
+\textbf{Sub-preguntas.} 
+(a) ¿Cuál es el tiempo de preparación por caso (\(T_{\mathrm{prep}}\)) y la precisión de giro alcanzable por el sistema? 
+(b) ¿La disponibilidad de repeticiones rápidas y consistentes mejora la memorización/retención de algoritmos respecto a la práctica manual? 
+(c) ¿Se reduce la carga percibida y la frustración al entrenar con el sistema?
+
+\textbf{Delimitación y alcance.} El estudio se circunscribe al cubo 3×3 y al método CFOP (F2L, OLL, PLL). El sistema propuesto se limita a \emph{generar casos} para entrenamiento con cubo físico; no aborda la resolución completa ni la verificación mediante visión artificial. La población objetivo son practicantes con dominio del método básico que buscan progresar en CFOP.
+
+\textbf{Supuestos y restricciones.} Se asume el uso de cubos 3×3 estándar y condiciones de laboratorio/aula; se reconocen restricciones de costo, tolerancias mecánicas y seguridad de operación.
+
+\textbf{Criterios operacionales de éxito.} 
+(i) \(T_{\mathrm{prep}}\) promedio por caso inferior al observado en preparación manual (\textit{definir meta en función del baseline}); 
+(ii) error angular por giro por debajo de un umbral preestablecido (\textit{definir grados máximos permitidos}); 
+(iii) incremento significativo en repeticiones útiles por sesión frente a manual; 
+(iv) mejora en indicadores de aprendizaje (memorización/fluidez) y reducción de frustración reportada por los usuarios (p.\,ej., escalas tipo Likert) \cite{Boyce2022}.
