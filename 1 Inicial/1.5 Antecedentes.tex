@@ -1,1 +1,82 @@
 \section{Antecedentes}
+
+\label{Antecedentes}
+En esta sección, se presentan diversos trabajos relevantes que sirvieron como referencia para la realización del proyecto. Se enumeran hallazgos obtenidos relacionados con sistemas mecatronicos para armar el cubo rubik, asi como sistemas relacionados con vision artificial sobre lectura de las caras y algoritmos de resolucion.
+
+Los antecedentes se han seleccionado considerando publicaciones previas que operan en condiciones similares con respecto a materiales, equipos y requerimientos del proyecto actual. 
+
+
+%\newpage
+\begin{sidewaystable}
+  \scriptsize
+  \centering
+  \caption{ S´ıntesis de antecedentes del sistema propuesto (Parte 1)}
+  \begin{tabular}{m{5mm} m{25mm} m{45mm} m{35mm} m{20mm} m{20mm} m{15mm} m{25mm}}
+    \toprule
+    \centering \textbf{No.} & \centering \textbf{Nombre} & \centering \textbf{Descripción} & \centering \textbf{Características} & \centering \textbf{País} & \centering \textbf{Organización} & \centering \textbf{Tipo} & \textbf{Referencia} \\ 
+    \midrule
+    \centering 1 & \centering Mechanical Automation with Vision: A Design for Rubik’s Cube
+Solver. & 
+    \parbox{45mm}{sistema autónomo que combina visión por computadora con un mecanismo físico para resolver un cubo Rubik.} & 
+    \parbox{35mm}{
+      -El sistema utiliza el algoritmo de Kociemba.
+      -Sistema mecánico automatizado.
+      -Implementa motores paso a paso (tres en total).
+      -Emplea YOLOv8 para la detección de colores.} & 
+    \centering Nepal & \centering Thapathali Campus & \centering Articulo. & \qquad[\cite{chalise2025mechanical}] \\ 
+    \midrule
+    \centering 2 & \centering Robotic Cuber: A Rubik’s Cube solving robot. & \centering El proyecto consiste en el diseño y construcción de un robot de cuatro brazos capaz de escanear un cubo Rubik mediante cámara, procesar su estado, y manipular físicamente el cubo para resolverlo. & 
+    \parbox{35mm}{
+    -Uso de una cámara web para capturar las caras.
+    -Basado en el algoritmo de Kociemba.
+    -Diseño con cuatro brazos tipo garra para sujetar y rotar el cubo.
+    -Para la configuración rápida, el tiempo promedio fue de ~88.07 s.
+     }
+ & 
+    \centering México & \centering IPN-UPIBI & \centering Articulo. & \quad[¬.¬] \\
+    \midrule
+    \centering 3 & \centering Automatización y control inteligente fuzzy de un reactor UASB vía wireless con LabVIEW. & \centering Prototipo para la automatización y el control inteligente de la medición de pH aplicado a un biorreactor de recirculación de flujo ascendente (UASB). & 
+    \parbox{35mm}{Controlador: NI myRIO-1900.
+Software: LabVIEW.
+Capacidad máxima de suministro de cada reservorio: 5.5 L.
+Comunicación Wireless.
+Bombeo de sustancia por medio de una bomba sumergible y dos bombas peristálticas.} & 
+    \centering México & \centering IPN-UPIBI & \centering Articulo. & \qquad[=)] \\
+    \bottomrule
+  \end{tabular}  
+\end{sidewaystable}
+
+\begin{sidewaystable}
+  \scriptsize
+  \centering
+  \caption{Antecedentes del sistema propuesto (Parte 2)}
+  \begin{tabular}{m{5mm} m{25mm} m{45mm} m{35mm} m{20mm} m{20mm} m{15mm} m{25mm}}
+    \toprule
+    \centering \textbf{No.} & \centering \textbf{Nombre} & \centering \textbf{Descripción} & \centering \textbf{Características} & \centering \textbf{País} & \centering \textbf{Organización} & \centering \textbf{Tipo} & \textbf{Referencia} \\ 
+    \midrule
+    \centering 4 & \centering Control difuso del oxígeno disuelto, pH y Temperatura de un biorreactor columna de burbujas en la producción de biomasa de Candida utilis. & \centering Se implementó un sistema de control automático por lógica difusa de oxígeno disuelto (OD), pH y temperatura en un biorreactor columna de burbujas (BCB), para la producción de biomasa de Candida utilis. & 
+    \parbox{35mm}{Consta de 3 relés para activar válvulas solenoides, 2 relés para resistencias, 1 microcontrolador, puntos de conexión para fuente.
+Software para diseñar la tarjeta: Eagle 4.14.
+Software para programar la tarjeta: Microcode Studio Plus 3.0.
+Sensor de temperatura:LM35.
+Oxímetro Hach Sension 6.
+pHmetro Hach Sension 2.
+Válvulas solenoides (2.94 MPa).
+Programa en Visual Basic 6.0 enlazado con MatLab 7.0 para control difuso.
+} & 
+    \centering Perú. & \centering Universidad Nacional de Trujillo & \centering Articulo. & \quad[=(] \\
+    \midrule
+    \centering 5 & \centering Modeling of automatic control system for air supply to a bioreactor using fuzzy control. & \centering Desarrollo de un sistema de control automático (ACS) eficaz del suministro de aire para la aireación en el biorreactor. & 
+    \parbox{35mm}{Software utilizado: Fuzzy Logic Toolbox system of the Simulink MATLAB} & 
+    \centering Rus & \centering Kuban state technological University & \centering Articulo. & \qquad[:v] \\
+    \midrule
+    \centering 6 & \centering Diseño de un sensor suave para estimar el Kla de un sistema de fermentación utilizando sistemas no lineales. & \centering Algoritmo matemático, propuesto para estimar la variable de Kla, basado en la observación del error entre la dinámica del error entre la dinámica de evolución del oxigeno disponible en línea y la dinámica de estimación de oxigeno estimado para el cultivo S.cerevisiae.& 
+    \parbox{35mm}{Software empleado: Simulink-MATLAB
+Sensor de tres etapas: Primera etapa diseño de simulación de biorreactor y red neuronal diferencial,
+Segunda etapa, observador adaptable y tercera etapa neuro observador de estados. 
+} & 
+    \centering México & \centering IPN-UPIBI & \centering Tesis de maestría & \qquad[:v] \\
+    \bottomrule
+  \end{tabular}  
+\end{sidewaystable}
+
