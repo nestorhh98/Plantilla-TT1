@@ -12,12 +12,15 @@ declaración de valor y unidades.\\
 		\textbf{No.} & \textbf{Necesidad} & \textbf{Clasificación} \\ \midrule
 		N\textsubscript{1} &   Ser eficiente    &       Funcional        \\
         N\textsubscript{2} &   Modular          &       Funcional        \\
+        N\textsubscript{2} &   Que las partes moviles no se traben          &       Funcional        \\
 		N\textsubscript{3} &   Preparación automática de casos CFOP    &       Funcional        \\
         N\textsubscript{4} &   Verificación por visión artificial (antes/después)    &       Funcional        \\
         N\textsubscript{5} &   Interfaz Hombre-Máquina (IHM)    &       Funcional        \\
 		N\textsubscript{6} &   Gestión de base de datos de algoritmos       &      Funcional      \\
         N\textsubscript{7} &   Repetibilidad y precisión    &      No funcional      \\
         N\textsubscript{7} &   Seguridad eléctrica y mecánica    &      No funcional      \\
+        N\textsubscript{7} &   elaborado con componentes comerciales    &      No funcional      \\
+        N\textsubscript{7} &   Fácil operación    &      No funcional      \\
         N\textsubscript{7} &   Bajo costo    &      No funcional      \\ \bottomrule
 	\end{tabular}
 \end{table}
@@ -27,16 +30,36 @@ declaración de valor y unidades.\\
 Se convierten las necesidades en requerimientos medibles
 
 \begin{table}[h]
+    \scriptsize
 	\centering
 	\caption{Tabla de requerimientos}
-	\begin{tabular}{cccc}
+	\begin{tabular}{p{10mm} p{120mm}} 
 		\toprule
-		\textbf{No.} & \textbf{Requerimiento} & \textbf{Variable} & \textbf{Valor} \\ \midrule
-	 R\textsubscript{1}   &       Velocidad        &       $ v $       &    0 [m/s]     \\
-	 R\textsubscript{2}   &          Peso          &       $ w $       &     20 [N]     \\ \bottomrule
+		\textbf{No.} & \textbf{Requerimiento} \\ \midrule
+	 R\textsubscript{1}   &       Preparar automáticamente un caso CFOP seleccionado (F2L/OLL/PLL).     \\
+  R\textsubscript{2}   &          Validar el estado del cubo antes y después de cada secuencia mediante visión.        \\
+  R\textsubscript{3}   &          Preparación de Algoritmos de Última Capa: El sistema debe ser capaz de preparar el cubo para la ejecución de cualquiera de los 21 algoritmos de Permutación de la Última Capa (PLL) y los 57 de Orientación de la Última Capa (OLL).       \\
+  R\textsubscript{4}   &          Preparación de Casos de F2L: El sistema debe tener un modo para preparar el cubo en un estado donde solo falte por resolver una de las cuatro parejas de las primeras dos capas (F2L), permitiendo al usuario seleccionar y practicar un caso específico.       \\
+  R\textsubscript{5}   &          Preparación de Casos de Cruz: El sistema debe permitir la configuración de escenarios específicos para la práctica de la construcción de la cruz.       \\
+  R\textsubscript{6}   &          El sistema debe poder ejecutar secuencias de movimientos sobre el cubo (giros de 90° y 180° en sentido horario y antihorario) en cualquiera de sus 6 caras.       \\
+  R\textsubscript{7}   &          El tiempo total para preparar un caso (desde que el usuario lo selecciona hasta que el cubo está listo) debe ser inferior a 2 minutos       \\
+  R\textsubscript{8}   &          La ejecución de los giros debe tener una precisión angular de ±2 grados para evitar bloqueos o errores en la manipulación. El sistema no debe soltar el cubo durante la operación.       \\
+  R\textsubscript{9}   &          El sistema debe ser capaz de operar por un mínimo de 50 ciclos de preparación sin fallos mecánicos o electrónicos significativos.      \\ \bottomrule
 	\end{tabular}
 \end{table}
 \FloatBarrier
+
+
+\begin{table}[h]
+	\centering
+	\caption{Tabla de restricciones}
+	\begin{tabular}{p{10mm} p{120mm}}
+		\toprule
+		\textbf{No.} & \textbf{Necesidad}  \\ \midrule
+		Re\textsubscript{1} &   Compatibilidad del Cubo: El diseño mecánico debe ser compatible con cubos de velocidad estándar de 3x3x3, con dimensiones de 56mm ± 5mm.            \\
+         \bottomrule
+	\end{tabular}
+\end{table}
 
 
 
